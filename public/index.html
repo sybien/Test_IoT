@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PLC IoT System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+
+</header>
+
+<body>
+
+    <header>
+        <h1>PLC IoT HE THONG DIEU KHIEN  BOM AP SUAT</h1>
+        <p>SIEMENS S7-1200</p>
+    </header>
+
+    <main class="container">
+
+        <!-- CONNECTION -->
+        <section class="card">
+            <h2>PLC CONNECTION</h2>
+
+            <div class="connection">
+                <span id="connectionLed"
+                      class="led offline"></span>
+
+                <span id="connection">
+                    Disconnected
+                </span>
+            </div>
+        </section>
+
+        <!-- MOTOR CONTROL -->
+        <section class="card">
+            <h2>MOTOR CONTROL</h2>
+
+            <div id="motorStatus" class="motor-status stop">
+                STOP
+            </div>
+
+            <div class="buttons">
+
+                <button id="startBtn"
+                        class="start"
+                        disabled>
+                    START
+                </button>
+
+                <button id="stopBtn"
+                        class="stop"
+                        disabled>
+                    STOP
+                </button>
+
+            </div>
+        </section>
+
+        <!-- MONITORING -->
+        <section class="card">
+            <h2>MONITORING</h2>
+
+            <div class="data">
+                <p>TEMPERATURE</p>
+
+                <h3 id="temperature">
+                    -- °C
+                </h3>
+            </div>
+
+            <div class="data">
+                <p>MOTOR SPEED</p>
+
+                <h3 id="speed">
+                    -- RPM
+                </h3>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Industrial IoT - S7-1200</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+</html>
